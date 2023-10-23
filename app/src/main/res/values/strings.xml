@@ -18,4 +18,12 @@
     <string name="app_name">Happy Birthday</string>
     <string name="happy_birthday_text">Happy Birthday Sam!</string>
     <string name="signature_text">From Emma</string>
+    <string name="text_1">Text composable</string>
+    <string name="text_2">Displays text and follows the recommended Material Design guidelines.</string>
+    <string name="text_3">Image composable</string>
+    <string name="text_4">Creates a composable that lays out and draws a given Painter class object.</string>
+    <string name="text_5">Row composable</string>
+    <string name="text_6">A layout composable that places its children in a horizontal sequence.</string>
+    <string name="text_7">Column composable</string>
+    <string name="text_8">A layout composable that places its children in a vertical sequence.</string>
 </resources>
