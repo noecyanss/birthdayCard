@@ -54,10 +54,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    GreetingImage(
-                        stringResource(R.string.happy_birthday_text),
-                        stringResource(R.string.signature_text)
-                    )
+                    GreetingCompose()
                 }
             }
         }
@@ -114,27 +111,35 @@ fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) 
 fun GreetingCompose(){
     Column(Modifier.fillMaxWidth()){
         Row(Modifier.weight(1f)) {
-            ComposableInfoCard1(title = stringResource(R.string.text_1),
+            ComposableInfoCard1(
+                title = stringResource(R.string.text_1),
                 info = stringResource(R.string.text_2),
                 backgroundColor = Color(0xFFEADDFF),
-                modifier = Modifier.weight(1f))
+                modifier = Modifier.weight(1f)
+            )
 
-            ComposableInfoCard1(title = stringResource(R.string.text_3),
+            ComposableInfoCard1(
+                title = stringResource(R.string.text_3),
                 info = stringResource(R.string.text_4),
                 backgroundColor = Color(0xFFD0BCFF),
-                modifier = Modifier.weight(1f))
+                modifier = Modifier.weight(1f)
+            )
         }
 
         Row(Modifier.weight(1f)) {
-            ComposableInfoCard1(title = stringResource(R.string.text_5),
+            ComposableInfoCard1(
+                title = stringResource(R.string.text_5),
                 info = stringResource(R.string.text_6),
                 backgroundColor = Color(0xFFB69DF8),
-                modifier = Modifier.weight(1f))
+                modifier = Modifier.weight(1f)
+            )
 
-            ComposableInfoCard1(title = stringResource(R.string.text_7),
+            ComposableInfoCard1(
+                title = stringResource(R.string.text_7),
                 info = stringResource(R.string.text_8),
                 backgroundColor = Color(0xFFF6EDFF),
-                modifier = Modifier.weight(1f))
+                modifier = Modifier.weight(1f)
+            )
         }
     }
 }
@@ -142,10 +147,11 @@ fun GreetingCompose(){
 
 @Composable
 fun ComposableInfoCard1(title:String,info:String,backgroundColor:Color,modifier: Modifier = Modifier){
-    Column(modifier = modifier
+    Column(
+        modifier = modifier
         .fillMaxSize()
-        .padding(16.dp)
-        .background(backgroundColor),
+        .background(backgroundColor)
+        .padding(16.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally) {
         Text(
@@ -226,7 +232,7 @@ private fun ComposableInfoCard(
 
 
 
-@Preview(showBackground = true)
+@Preview(showBackground = false)
 @Composable
 private fun BirthdayCardPreview() {
     HappyBirthdayTheme {
