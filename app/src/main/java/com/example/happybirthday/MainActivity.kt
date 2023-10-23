@@ -105,6 +105,8 @@ fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) 
     }
 }
 
+
+
 @Preview(showBackground = false)
 @Composable
 private fun BirthdayCardPreview() {
